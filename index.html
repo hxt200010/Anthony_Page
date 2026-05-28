@@ -136,20 +136,21 @@
 </div>
 </nav>
 </header>
-<main class="pt-section pb-section">
+<main class="pt-16 pb-section">
 <!-- Hero Section -->
-<section class="max-w-max-width mx-auto px-margin-mobile md:px-lg mt-md" id="home">
-    <div class="relative w-full rounded-2xl overflow-hidden shadow-ambient mb-xl border border-outline-variant dark:border-slate-600">
+<section class="w-full" id="home">
+    <div class="relative w-full shadow-ambient mb-xl border-b border-outline-variant dark:border-slate-600">
         <!-- Cover Image -->
-        <div class="w-full h-48 md:h-64 lg:h-80 relative bg-surface-container dark:bg-slate-800/80">
-            <img src="Image Folder/software_cover.png" alt="Tech Cover" class="w-full h-full object-cover" />
+        <div class="w-full h-64 md:h-80 lg:h-[500px] relative bg-surface-container dark:bg-slate-800/80">
+            <img src="Image Folder/cover1.png" alt="Tech Cover" class="w-full h-full object-cover object-center" />
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
         </div>
         
         <!-- Content Area overlapping the cover -->
-        <div class="relative px-md md:px-xl pb-xl pt-28 md:pt-32 bg-surface-container-lowest dark:bg-slate-800 border-t-0">
-            <!-- Profile Picture overlapping the cover image -->
-            <div class="absolute -top-16 md:-top-20 left-md md:left-xl">
+        <div class="w-full bg-surface-container-lowest dark:bg-slate-800 border-t-0">
+            <div class="max-w-max-width mx-auto relative px-margin-mobile md:px-lg pb-xl pt-24 md:pt-32">
+                <!-- Profile Picture overlapping the cover image -->
+                <div class="absolute -top-16 md:-top-20 left-margin-mobile md:left-lg">
                 <a href="Image Folder/profile_picture.png" target="_blank" class="block aspect-square w-40 md:w-48 rounded-full overflow-hidden border-4 border-surface-container-lowest shadow-ambient relative z-10 bg-surface dark:bg-slate-900 isolate">
                     <img src="Image Folder/profile_picture.png" alt="Anthony Tran" class="w-full h-full object-cover object-[center_40%] scale-[1.6] hover:scale-[1.7] transition-transform duration-500" />
                 </a>
@@ -182,6 +183,7 @@
                     </a>
                 </div>
             </div>
+            </div>
         </div>
     </div>
 </section>
@@ -209,8 +211,8 @@
 <p class="font-body-md text-body-md text-primary dark:text-blue-300 font-medium">Congero Technology Group</p>
 <span class="font-caption text-caption text-on-surface-variant dark:text-slate-300 bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 px-xs py-base rounded inline-block mt-xs">May 2026 - Present · North America (Remote)</span>
 </div>
-<div class="flex-shrink-0 bg-white/95 backdrop-blur-sm px-4 py-2.5 rounded-2xl shadow-sm border border-black/5 dark:border-white/10 flex items-center justify-center hover:shadow-md hover:-translate-y-1 transition-all duration-300 group">
-<img src="Image Folder/ctg.png" alt="Congero Logo" class="h-8 md:h-10 w-auto max-w-[140px] object-contain group-hover:opacity-80 transition-opacity" />
+<div class="flex-shrink-0 bg-white/95 backdrop-blur-sm px-5 py-3 rounded-2xl shadow-sm border border-black/5 dark:border-white/10 flex items-center justify-center hover:shadow-md hover:-translate-y-1 transition-all duration-300 group">
+<img src="Image Folder/ctg.png" alt="Congero Logo" class="h-12 md:h-16 w-auto max-w-[200px] object-contain group-hover:opacity-80 transition-opacity" />
 </div>
 </div>
 <p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-300 mb-md">
@@ -263,8 +265,8 @@ Collaborated in team environments to deliver robust enterprise solutions, focusi
 <p class="font-body-md text-body-md text-primary dark:text-blue-300 font-medium">Mark Cuban Foundation</p>
 <span class="font-caption text-caption text-on-surface-variant dark:text-slate-300 bg-surface-container-low dark:bg-slate-800 px-xs py-base rounded inline-block mt-xs">September 2022 - October 2022</span>
 </div>
-<div class="flex-shrink-0 bg-white/95 backdrop-blur-sm px-4 py-2.5 rounded-2xl shadow-sm border border-black/5 dark:border-white/10 flex items-center justify-center hover:shadow-md hover:-translate-y-1 transition-all duration-300 group">
-<img src="Image Folder/mcf.png" alt="Mark Cuban Foundation Logo" class="h-8 md:h-10 w-auto max-w-[140px] object-contain group-hover:opacity-80 transition-opacity" />
+<div class="flex-shrink-0 bg-white/95 backdrop-blur-sm px-5 py-3 rounded-2xl shadow-sm border border-black/5 dark:border-white/10 flex items-center justify-center hover:shadow-md hover:-translate-y-1 transition-all duration-300 group">
+<img src="Image Folder/mcf.png" alt="Mark Cuban Foundation Logo" class="h-12 md:h-16 w-auto max-w-[200px] object-contain group-hover:opacity-80 transition-opacity" />
 </div>
 </div>
 <p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-300 mb-md">Mentored and instructed 100+ high school students in foundational AI and machine learning concepts through a 4-week intensive bootcamp, focusing on practical applications and real-world use cases.</p>
@@ -367,15 +369,22 @@ Collaborated in team environments to deliver robust enterprise solutions, focusi
 <h3 class="font-h3 text-h3 text-on-surface dark:text-slate-100">CapyLearn Learning Platform</h3>
 <span class="bg-surface-container-high dark:bg-slate-700 text-on-surface dark:text-slate-100 font-caption text-caption px-xs py-base rounded">Active</span>
 </div>
-<p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-300 mb-md flex-1">Created a 3-panel resizable workspace (Knowledge Base, Document Viewer, AI Tutor) with drag-to-resize dividers for split-screen studying.</p>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-300 mb-md flex-1">Created a production grade online learning application with 3-panel resizable workspace (Knowledge Base, Document Viewer, AI Tutor) with drag-to-resize dividers for split-screen studying.</p>
 <ul class="list-none font-caption text-caption text-on-surface-variant dark:text-slate-300 mb-md space-y-base">
 <li class="flex items-start gap-xs"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 flex-shrink-0"></span>Developed an agentic AI chat system with autonomous tool-calling loop to search materials, generate flashcards, and save notes.</li>
 <li class="flex items-start gap-xs"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 flex-shrink-0"></span>Implemented multimodal document analysis via PyMuPDF and GPT-4o vision API.</li>
+<li class="flex items-start gap-xs"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 flex-shrink-0"></span>Enable features such as youtube video summarizer, flashcards, practices with grade-as-you-go, and so much more.</li>
 </ul>
 <div class="flex flex-wrap gap-base mb-md">
 <span class="bg-surface dark:bg-slate-900 text-on-surface-variant dark:text-slate-300 border border-outline-variant dark:border-slate-600 font-caption text-caption px-xs py-base rounded">Python</span>
 <span class="bg-surface dark:bg-slate-900 text-on-surface-variant dark:text-slate-300 border border-outline-variant dark:border-slate-600 font-caption text-caption px-xs py-base rounded">LangChain &amp; FAISS</span>
 <span class="bg-surface dark:bg-slate-900 text-on-surface-variant dark:text-slate-300 border border-outline-variant dark:border-slate-600 font-caption text-caption px-xs py-base rounded">Next.js</span>
+</div>
+<div class="flex flex-wrap items-center gap-md mt-auto pt-sm border-t border-outline-variant dark:border-slate-600">
+<span class="inline-flex items-center gap-xs text-on-surface-variant dark:text-slate-400 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+Privately Owned (Intended for Business Use)
+</span>
 </div>
 </div>
 </div>

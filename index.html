@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Anthony Tran - Professional Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#b7c8e1",
+                        "tertiary-container": "#665131",
+                        "primary-fixed-dim": "#b9c7df",
+                        "on-surface-variant": "#44474c",
+                        "secondary-container": "#d0e1fb",
+                        "surface-variant": "#d9e3f6",
+                        "on-surface": "#121c2a",
+                        "on-primary-fixed-variant": "#3a485b",
+                        "surface-container-low": "#eff4ff",
+                        "inverse-surface": "#27313f",
+                        "on-primary-container": "#bbcae1",
+                        "on-background": "#121c2a",
+                        "surface-bright": "#f8f9ff",
+                        "background": "#f8f9ff",
+                        "error-container": "#ffdad6",
+                        "on-primary": "#ffffff",
+                        "surface": "#f8f9ff",
+                        "primary": "#303e51",
+                        "on-tertiary-fixed": "#281901",
+                        "secondary-fixed": "#d3e4fe",
+                        "on-tertiary-container": "#e2c59d",
+                        "surface-container-high": "#dee9fc",
+                        "surface-tint": "#515f74",
+                        "outline": "#75777d",
+                        "surface-dim": "#d0dbed",
+                        "secondary": "#505f76",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-tertiary-fixed-variant": "#574325",
+                        "inverse-primary": "#b9c7df",
+                        "tertiary": "#4d3a1c",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#c4c6cd",
+                        "primary-fixed": "#d5e3fc",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#475569",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#38485d",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#dfc29a",
+                        "surface-container": "#e6eeff",
+                        "on-secondary-container": "#54647a",
+                        "on-primary-fixed": "#0d1c2e",
+                        "on-secondary-fixed": "#0b1c30",
+                        "error": "#ba1a1a",
+                        "surface-container-highest": "#d9e3f6",
+                        "tertiary-fixed": "#fcdeb4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "base": "4px",
+                        "xs": "0.5rem",
+                        "margin-mobile": "20px",
+                        "lg": "2.5rem",
+                        "md": "1.5rem",
+                        "section": "8rem",
+                        "xl": "4rem",
+                        "max-width": "1120px",
+                        "sm": "1rem"
+                    },
+                    "fontFamily": {
+                        "caption": ["Geist"],
+                        "body-lg": ["Geist"],
+                        "label-md": ["Geist"],
+                        "h3": ["Geist"],
+                        "body-md": ["Geist"],
+                        "display-mobile": ["Geist"],
+                        "display": ["Geist"],
+                        "h1": ["Geist"],
+                        "h2": ["Geist"]
+                    },
+                    "fontSize": {
+                        "caption": ["12px", { "lineHeight": "1.4", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "h3": ["20px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-mobile": ["36px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "display": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "h1": ["32px", { "lineHeight": "1.25", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "h2": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        html { scroll-behavior: smooth; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0; }
+        .shadow-ambient { box-shadow: 0 10px 30px -10px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body class="bg-background dark:bg-slate-900 text-on-background dark:text-slate-100 font-body-md antialiased selection:bg-primary-container selection:text-on-primary selection:bg-opacity-30">
+<!-- TopNavBar -->
+<header class="bg-surface/80 dark:bg-slate-900/80 backdrop-blur-md fixed top-0 left-0 w-full z-50 border-b border-outline-variant dark:border-slate-600">
+<nav class="max-w-max-width mx-auto flex items-center justify-between h-16 px-margin-mobile md:px-lg">
+<div class="font-h3 text-h2 font-bold text-on-surface dark:text-slate-100">
+                Anthony Tran
+            </div>
+<ul class="hidden md:flex items-center gap-md">
+<li class=""><a class="text-secondary dark:text-slate-400 font-label-md hover:text-primary dark:hover:text-white transition-colors" href="#about">About</a></li>
+<li class=""><a class="text-secondary dark:text-slate-400 font-label-md hover:text-primary dark:hover:text-white transition-colors" href="#experience">Experience</a></li>
+<li class=""><a class="text-secondary dark:text-slate-400 font-label-md hover:text-primary dark:hover:text-white transition-colors" href="#projects">Projects</a></li>
+<li class=""><a class="text-secondary dark:text-slate-400 font-label-md hover:text-primary dark:hover:text-white transition-colors" href="#volunteer">Volunteer</a></li>
+<li class=""><a class="text-secondary dark:text-slate-400 font-label-md hover:text-primary dark:hover:text-white transition-colors" href="#skills">Skills</a></li>
+<li class=""><a class="text-secondary dark:text-slate-400 font-label-md hover:text-primary dark:hover:text-white transition-colors" href="#education">Education</a></li>
+<li class=""><a class="text-secondary dark:text-slate-400 font-label-md hover:text-primary dark:hover:text-white transition-colors" href="#certifications">Certifications</a></li>
+<li class=""><a class="text-secondary dark:text-slate-400 font-label-md hover:text-primary dark:hover:text-white transition-colors" href="#contact">Contact</a></li>
+</ul>
+<div class="flex items-center gap-sm">
+<button id="dark-mode-toggle" aria-label="Toggle Dark Mode" class="hover:bg-surface-container-low dark:bg-slate-800 rounded-xl transition-all duration-300 p-xs active:scale-95 cursor-pointer text-primary dark:text-blue-300">
+<span class="material-symbols-outlined" data-icon="dark_mode">dark_mode</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="pt-section pb-section">
+<!-- Hero Section -->
+<section class="max-w-max-width mx-auto px-margin-mobile md:px-lg mt-md" id="home">
+    <div class="relative w-full rounded-2xl overflow-hidden shadow-ambient mb-xl border border-outline-variant dark:border-slate-600">
+        <!-- Cover Image -->
+        <div class="w-full h-48 md:h-64 lg:h-80 relative bg-surface-container dark:bg-slate-800/80">
+            <img src="Image Folder/software_cover.png" alt="Tech Cover" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        </div>
+        
+        <!-- Content Area overlapping the cover -->
+        <div class="relative px-md md:px-xl pb-xl pt-28 md:pt-32 bg-surface-container-lowest dark:bg-slate-800 border-t-0">
+            <!-- Profile Picture overlapping the cover image -->
+            <div class="absolute -top-16 md:-top-20 left-md md:left-xl">
+                <a href="Image Folder/profile_picture.png" target="_blank" class="block aspect-square w-40 md:w-48 rounded-full overflow-hidden border-4 border-surface-container-lowest shadow-ambient relative z-10 bg-surface dark:bg-slate-900 isolate">
+                    <img src="Image Folder/profile_picture.png" alt="Anthony Tran" class="w-full h-full object-cover object-[center_40%] scale-[1.6] hover:scale-[1.7] transition-transform duration-500" />
+                </a>
+            </div>
+            
+            <div class="flex flex-col items-start gap-xs max-w-3xl mt-4 md:mt-0">
+                <div class="inline-flex items-center gap-xs bg-surface-container-high dark:bg-slate-700 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded-full mb-xs">
+                    <span class="w-2 h-2 rounded-full bg-primary block"></span>
+                    Open to Opportunities
+                </div>
+                
+                <h1 class="font-display text-display text-on-surface dark:text-slate-100 tracking-tight leading-tight">
+                    Anthony Tran
+                </h1>
+                
+                <h2 class="font-h1 text-h3 text-primary dark:text-blue-300 mb-sm">
+                    Aspiring Data Analyst / Scientist and Software Engineer
+                </h2>
+                
+                <p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-300 max-w-2xl">
+                    I provide insights and solutions to business problems, leveraging proficiency in Python, SQL, Generative AI, and Machine Learning to drive impactful results.
+                </p>
+                
+                <div class="flex flex-wrap items-center gap-sm mt-sm">
+                    <a class="inline-flex items-center justify-center bg-primary-container dark:bg-blue-600 text-on-primary dark:text-white font-label-md text-label-md px-md py-sm rounded-lg hover:bg-primary dark:hover:bg-blue-500 transition-colors focus:ring-2 focus:ring-primary focus:ring-offset-2" href="#projects">
+                        View Projects
+                    </a>
+                    <a class="inline-flex items-center justify-center text-primary dark:text-blue-300 border border-outline-variant dark:border-slate-600 font-label-md text-label-md px-md py-sm rounded-lg hover:bg-surface-container-lowest dark:hover:bg-slate-700 dark:hover:bg-slate-800 transition-colors" href="#contact">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Section -->
+<section class="max-w-max-width mx-auto px-margin-mobile md:px-lg mt-section" id="about">
+<div class="max-w-3xl">
+<h2 class="font-h2 text-h2 text-on-surface dark:text-slate-100 mb-md">About Me</h2>
+<div class="font-body-md text-body-md text-on-surface-variant dark:text-slate-300 space-y-sm">
+<p class="">I’m a Master’s student in Computer Science at University of Texas at Dallas specializing in the Data Science field.</p>
+<p class="">As a future Data Scientist, I'm curious in things that are happening around me, the problems that I'm facing, and what solutions I can build. This is what drives me, inspires me, and pushes me to become a promising Data Scientist.</p>
+<p class="">Besides my technical background, I'm an effective communicator with excellent people skills. I'm a team player who helps teammates whenever possible to deliver solutions for businesses. If you are looking for an aspiring Data Scientist, please feel free to connect with me!</p>
+</div>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="max-w-max-width mx-auto px-margin-mobile md:px-lg mt-section" id="experience">
+<h2 class="font-h2 text-h2 text-on-surface dark:text-slate-100 mb-lg">Experience</h2>
+<div class="flex flex-col gap-lg border-l border-outline-variant dark:border-slate-600 pl-md relative">
+<!-- Experience Card 1 (Congero) -->
+<div class="relative bg-surface-container-lowest dark:bg-slate-800 border border-outline-variant dark:border-slate-600 p-lg rounded-xl shadow-ambient">
+<div class="absolute -left-[1.65rem] top-lg w-3 h-3 bg-primary rounded-full ring-4 ring-background dark:ring-slate-900"></div>
+<div class="flex flex-col md:flex-row md:justify-between md:items-start gap-md mb-sm">
+<div>
+<h3 class="font-h3 text-h3 text-on-surface dark:text-slate-100">Software Engineer Intern</h3>
+<p class="font-body-md text-body-md text-primary dark:text-blue-300 font-medium">Congero Technology Group</p>
+<span class="font-caption text-caption text-on-surface-variant dark:text-slate-300 bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 px-xs py-base rounded inline-block mt-xs">May 2026 - Present · North America (Remote)</span>
+</div>
+<div class="flex-shrink-0 bg-white/95 backdrop-blur-sm px-4 py-2.5 rounded-2xl shadow-sm border border-black/5 dark:border-white/10 flex items-center justify-center hover:shadow-md hover:-translate-y-1 transition-all duration-300 group">
+<img src="Image Folder/ctg.png" alt="Congero Logo" class="h-8 md:h-10 w-auto max-w-[140px] object-contain group-hover:opacity-80 transition-opacity" />
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-300 mb-md">
+Collaborated in team environments to deliver robust enterprise solutions, focusing on practical application of training and project deliverables.
+</p>
+<ul class="list-disc ml-4 font-body-md text-body-md text-on-surface-variant dark:text-slate-300 mb-md space-y-xs">
+<li>Demonstrated functionality for pricing setup, token consumption simulation, billing, invoicing, and payment collection.</li>
+<li>Developed comprehensive reports and dashboards covering key metrics like new customer sign-ups and expected monthly recurring revenue (MRR).</li>
+<li>Achieved formal certifications from Oracle, Amazon (AWS), and Creatio upon passing rigorous final tests.</li>
+<li>Consistently delivered project outcomes by month-end while working independently and collaborating effectively.</li>
+</ul>
+<div class="flex flex-wrap gap-xs">
+<span class="font-caption text-caption text-on-surface dark:text-slate-100 bg-surface-container dark:bg-slate-800/80 px-sm py-base rounded-full">Oracle Database</span>
+<span class="font-caption text-caption text-on-surface dark:text-slate-100 bg-surface-container dark:bg-slate-800/80 px-sm py-base rounded-full">Cloud Computing</span>
+<span class="font-caption text-caption text-on-surface dark:text-slate-100 bg-surface-container dark:bg-slate-800/80 px-sm py-base rounded-full">AWS</span>
+<span class="font-caption text-caption text-on-surface dark:text-slate-100 bg-surface-container dark:bg-slate-800/80 px-sm py-base rounded-full">Creatio</span>
+<span class="font-caption text-caption text-on-surface dark:text-slate-100 bg-surface-container dark:bg-slate-800/80 px-sm py-base rounded-full">Billing &amp; Invoicing</span>
+</div>
+</div>
+
+<!-- Experience Card 2 (BAOVIET) -->
+<div class="relative bg-surface-container-lowest dark:bg-slate-800 border border-outline-variant dark:border-slate-600 p-lg rounded-xl shadow-ambient">
+<div class="absolute -left-[1.65rem] top-lg w-3 h-3 bg-primary rounded-full ring-4 ring-background dark:ring-slate-900"></div>
+<div class="flex flex-col md:flex-row md:justify-between md:items-start gap-md mb-sm">
+<div>
+<h3 class="font-h3 text-h3 text-on-surface dark:text-slate-100">Software Engineer Intern</h3>
+<p class="font-body-md text-body-md text-primary dark:text-blue-300 font-medium">BAOVIET LLC</p>
+<span class="font-caption text-caption text-on-surface-variant dark:text-slate-300 bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 px-xs py-base rounded inline-block mt-xs">May 2024 - August 2024</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-300 mb-md">Collaborated with Insurance agents to develop a CRM application to securely store and organize 1,000+ client records, improving system reliability and optimizing workflows for agents. Gathered all customer data to improve AI training while keeping customers sensitive data secured.</p>
+<ul class="list-disc list-inside font-body-md text-body-md text-on-surface-variant dark:text-slate-300 space-y-base mb-md marker:text-primary">
+<li class="">Reduced manual tracking time by 40% through system automation and improved data accessibility.</li>
+</ul>
+<div class="flex flex-wrap gap-xs mt-sm">
+<span class="bg-surface-container dark:bg-slate-800/80 text-on-surface dark:text-slate-100 font-caption text-caption px-xs py-base rounded">Python</span>
+<span class="bg-surface-container dark:bg-slate-800/80 text-on-surface dark:text-slate-100 font-caption text-caption px-xs py-base rounded">SQLite/PostgreSQL</span>
+<span class="bg-surface-container dark:bg-slate-800/80 text-on-surface dark:text-slate-100 font-caption text-caption px-xs py-base rounded">AWS</span>
+<span class="bg-surface-container dark:bg-slate-800/80 text-on-surface dark:text-slate-100 font-caption text-caption px-xs py-base rounded">React</span>
+<span class="bg-surface-container dark:bg-slate-800/80 text-on-surface dark:text-slate-100 font-caption text-caption px-xs py-base rounded">FastAPI (Uvicorn, Pydantic)</span>
+<span class="bg-surface-container dark:bg-slate-800/80 text-on-surface dark:text-slate-100 font-caption text-caption px-xs py-base rounded">Claude &amp; Agentic AI</span>
+</div>
+</div>
+<!-- Experience Card 3 (AI Bootcamp) -->
+<div class="relative bg-surface-container-lowest dark:bg-slate-800 border border-outline-variant dark:border-slate-600 p-lg rounded-xl shadow-ambient">
+<div class="absolute -left-[1.65rem] top-lg w-3 h-3 bg-primary rounded-full ring-4 ring-background dark:ring-slate-900"></div>
+<div class="flex flex-col md:flex-row md:justify-between md:items-start gap-md mb-sm">
+<div>
+<h3 class="font-h3 text-h3 text-on-surface dark:text-slate-100">AI Bootcamp Mentor</h3>
+<p class="font-body-md text-body-md text-primary dark:text-blue-300 font-medium">Mark Cuban Foundation</p>
+<span class="font-caption text-caption text-on-surface-variant dark:text-slate-300 bg-surface-container-low dark:bg-slate-800 px-xs py-base rounded inline-block mt-xs">September 2022 - October 2022</span>
+</div>
+<div class="flex-shrink-0 bg-white/95 backdrop-blur-sm px-4 py-2.5 rounded-2xl shadow-sm border border-black/5 dark:border-white/10 flex items-center justify-center hover:shadow-md hover:-translate-y-1 transition-all duration-300 group">
+<img src="Image Folder/mcf.png" alt="Mark Cuban Foundation Logo" class="h-8 md:h-10 w-auto max-w-[140px] object-contain group-hover:opacity-80 transition-opacity" />
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-300 mb-md">Mentored and instructed 100+ high school students in foundational AI and machine learning concepts through a 4-week intensive bootcamp, focusing on practical applications and real-world use cases.</p>
+<ul class="list-disc list-inside font-body-md text-body-md text-on-surface-variant dark:text-slate-300 space-y-base mb-md marker:text-primary dark:text-blue-300">
+<li class="">Successfully guided students in understanding core AI/ML concepts, improving engagement and learning outcomes with Microsoft Azure.</li>
+</ul>
+<div class="flex flex-wrap gap-xs mt-sm">
+<span class="bg-surface-container dark:bg-slate-800/80 text-on-surface dark:text-slate-100 font-caption text-caption px-xs py-base rounded">Microsoft Azure</span>
+<span class="bg-surface-container dark:bg-slate-800/80 text-on-surface dark:text-slate-100 font-caption text-caption px-xs py-base rounded">Azure ML Studio</span>
+<span class="bg-surface-container dark:bg-slate-800/80 text-on-surface dark:text-slate-100 font-caption text-caption px-xs py-base rounded">Cognitive Services</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="max-w-max-width mx-auto px-margin-mobile md:px-lg mt-section" id="projects">
+<h2 class="font-h2 text-h2 text-on-surface dark:text-slate-100 mb-lg">Selected Projects</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Project Card 1 -->
+<div class="bg-surface-container-lowest dark:bg-slate-800 border border-outline-variant dark:border-slate-600 rounded-xl overflow-hidden flex flex-col group hover:shadow-ambient transition-all duration-300">
+<a href="Image Folder/python_assistant.png" target="_blank" class="block w-full h-48 overflow-hidden border-b border-outline-variant dark:border-slate-600">
+<img src="Image Folder/python_assistant.png" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="Python Library Assistant" />
+</a>
+<div class="p-lg flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-sm">
+<h3 class="font-h3 text-h3 text-on-surface dark:text-slate-100">Python Library Assistant</h3>
+<span class="bg-surface-container-high dark:bg-slate-700 text-on-surface dark:text-slate-100 font-caption text-caption px-xs py-base rounded">Completed</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-300 mb-md flex-1">Collaborated with a team to create an intelligent RAG-based chatbot utilizing Python, LangChain, and OpenAI, effectively retrieving unstructured text data from Python documentation to provide conversational coding support.</p>
+<ul class="list-none font-caption text-caption text-on-surface-variant dark:text-slate-300 mb-md space-y-base">
+<li class="flex items-start gap-xs"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 flex-shrink-0"></span>Achieved 90% accuracy in responses.</li>
+<li class="flex items-start gap-xs"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 flex-shrink-0"></span>Executed document indexing and retrieval strategies using FAISS, integrating a FastAPI backend with a React frontend.</li>
+</ul>
+<div class="flex flex-wrap gap-base mb-md">
+<span class="bg-surface dark:bg-slate-900 text-on-surface-variant dark:text-slate-300 border border-outline-variant dark:border-slate-600 font-caption text-caption px-xs py-base rounded">FastAPI</span>
+<span class="bg-surface dark:bg-slate-900 text-on-surface-variant dark:text-slate-300 border border-outline-variant dark:border-slate-600 font-caption text-caption px-xs py-base rounded">LangChain</span>
+<span class="bg-surface dark:bg-slate-900 text-on-surface-variant dark:text-slate-300 border border-outline-variant dark:border-slate-600 font-caption text-caption px-xs py-base rounded">OpenAI</span>
+<span class="bg-surface dark:bg-slate-900 text-on-surface-variant dark:text-slate-300 border border-outline-variant dark:border-slate-600 font-caption text-caption px-xs py-base rounded">React</span>
+</div>
+<div class="flex flex-wrap items-center gap-md mt-auto pt-sm border-t border-outline-variant dark:border-slate-600">
+<a href="https://github.com/hxt200010/cs6320_project" target="_blank" class="inline-flex items-center gap-xs text-primary dark:text-blue-300 hover:text-primary dark:hover:text-white dark:text-blue-300 dark:hover:text-white-container font-label-md text-label-md transition-colors">GitHub Repository <span class="material-symbols-outlined text-[16px]">open_in_new</span></a>
+</div>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="bg-surface-container-lowest dark:bg-slate-800 border border-outline-variant dark:border-slate-600 rounded-xl overflow-hidden flex flex-col group hover:shadow-ambient transition-all duration-300">
+<a href="Image Folder/AA_Hackathon.png" target="_blank" class="block w-full h-48 overflow-hidden border-b border-outline-variant dark:border-slate-600">
+<img src="Image Folder/AA_Hackathon.png" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="Recommender System" />
+</a>
+<div class="p-lg flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-sm">
+<h3 class="font-h3 text-h3 text-on-surface dark:text-slate-100">AA Recommender System</h3>
+<span class="bg-surface-container-high dark:bg-slate-700 text-on-surface dark:text-slate-100 font-caption text-caption px-xs py-base rounded">Hackathon</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-300 mb-md flex-1">Developed a personalized recommendation engine during the American Airlines Hackathon to suggest optimal locations to over 10,000 users based on machine learning through 10,000+ rows of real data.</p>
+<ul class="list-none font-caption text-caption text-on-surface-variant dark:text-slate-300 mb-md space-y-base">
+<li class="flex items-start gap-xs"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 flex-shrink-0"></span>Utilized Ensemble Learning and Gradient Boosting to model complex customer patterns.</li>
+<li class="flex items-start gap-xs"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 flex-shrink-0"></span>Predicted top 10 recommended locations for AA customers based on their past trips.</li>
+</ul>
+<div class="flex flex-wrap gap-base mb-md">
+<span class="bg-surface dark:bg-slate-900 text-on-surface-variant dark:text-slate-300 border border-outline-variant dark:border-slate-600 font-caption text-caption px-xs py-base rounded">Python</span>
+<span class="bg-surface dark:bg-slate-900 text-on-surface-variant dark:text-slate-300 border border-outline-variant dark:border-slate-600 font-caption text-caption px-xs py-base rounded">SQL</span>
+<span class="bg-surface dark:bg-slate-900 text-on-surface-variant dark:text-slate-300 border border-outline-variant dark:border-slate-600 font-caption text-caption px-xs py-base rounded">Machine Learning</span>
+</div>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="bg-surface-container-lowest dark:bg-slate-800 border border-outline-variant dark:border-slate-600 rounded-xl overflow-hidden flex flex-col group hover:shadow-ambient transition-all duration-300">
+<a href="Image Folder/discord_bot.png" target="_blank" class="block w-full h-48 overflow-hidden border-b border-outline-variant dark:border-slate-600">
+<img src="Image Folder/discord_bot.png" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="Discord Bot" />
+</a>
+<div class="p-lg flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-sm">
+<h3 class="font-h3 text-h3 text-on-surface dark:text-slate-100">Educational Discord Bot</h3>
+<span class="bg-surface-container-high dark:bg-slate-700 text-on-surface dark:text-slate-100 font-caption text-caption px-xs py-base rounded">Completed</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-300 mb-md flex-1">Created a fully immersive Discord bot with 100+ slash commands ranging from Game Systems to Education, allowing 500+ users to enjoy gamified learning spanning Machine Learning to Data Structures.</p>
+<ul class="list-none font-caption text-caption text-on-surface-variant dark:text-slate-300 mb-md space-y-base">
+<li class="flex items-start gap-xs"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 flex-shrink-0"></span>Utilized OpenAI API and REST APIs for real-time, high-quality responses.</li>
+<li class="flex items-start gap-xs"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 flex-shrink-0"></span>Designed a role-based progression system rewarding users with XP and items.</li>
+<li class="flex items-start gap-xs"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 flex-shrink-0"></span>Deployed on Render via GitHub CI/CD for zero-downtime updates.</li>
+</ul>
+<div class="flex flex-wrap gap-base mb-md">
+<span class="bg-surface dark:bg-slate-900 text-on-surface-variant dark:text-slate-300 border border-outline-variant dark:border-slate-600 font-caption text-caption px-xs py-base rounded">Node.js</span>
+<span class="bg-surface dark:bg-slate-900 text-on-surface-variant dark:text-slate-300 border border-outline-variant dark:border-slate-600 font-caption text-caption px-xs py-base rounded">OpenAI</span>
+<span class="bg-surface dark:bg-slate-900 text-on-surface-variant dark:text-slate-300 border border-outline-variant dark:border-slate-600 font-caption text-caption px-xs py-base rounded">Render</span>
+</div>
+<div class="flex flex-wrap items-center gap-md mt-auto pt-sm border-t border-outline-variant dark:border-slate-600">
+<a href="https://github.com/hxt200010/DiscordBot" target="_blank" class="inline-flex items-center gap-xs text-primary dark:text-blue-300 hover:text-primary dark:hover:text-white dark:text-blue-300 dark:hover:text-white-container font-label-md text-label-md transition-colors">GitHub Repository <span class="material-symbols-outlined text-[16px]">open_in_new</span></a>
+</div>
+</div>
+</div>
+<!-- Project Card 4 -->
+<div class="bg-surface-container-lowest dark:bg-slate-800 border border-outline-variant dark:border-slate-600 rounded-xl overflow-hidden flex flex-col group hover:shadow-ambient transition-all duration-300">
+<a href="Image Folder/capylearn.png" target="_blank" class="block w-full h-48 overflow-hidden border-b border-outline-variant dark:border-slate-600">
+<img src="Image Folder/capylearn.png" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="CapyLearn Learning Platform" />
+</a>
+<div class="p-lg flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-sm">
+<h3 class="font-h3 text-h3 text-on-surface dark:text-slate-100">CapyLearn Learning Platform</h3>
+<span class="bg-surface-container-high dark:bg-slate-700 text-on-surface dark:text-slate-100 font-caption text-caption px-xs py-base rounded">Active</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-300 mb-md flex-1">Created a 3-panel resizable workspace (Knowledge Base, Document Viewer, AI Tutor) with drag-to-resize dividers for split-screen studying.</p>
+<ul class="list-none font-caption text-caption text-on-surface-variant dark:text-slate-300 mb-md space-y-base">
+<li class="flex items-start gap-xs"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 flex-shrink-0"></span>Developed an agentic AI chat system with autonomous tool-calling loop to search materials, generate flashcards, and save notes.</li>
+<li class="flex items-start gap-xs"><span class="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 flex-shrink-0"></span>Implemented multimodal document analysis via PyMuPDF and GPT-4o vision API.</li>
+</ul>
+<div class="flex flex-wrap gap-base mb-md">
+<span class="bg-surface dark:bg-slate-900 text-on-surface-variant dark:text-slate-300 border border-outline-variant dark:border-slate-600 font-caption text-caption px-xs py-base rounded">Python</span>
+<span class="bg-surface dark:bg-slate-900 text-on-surface-variant dark:text-slate-300 border border-outline-variant dark:border-slate-600 font-caption text-caption px-xs py-base rounded">LangChain &amp; FAISS</span>
+<span class="bg-surface dark:bg-slate-900 text-on-surface-variant dark:text-slate-300 border border-outline-variant dark:border-slate-600 font-caption text-caption px-xs py-base rounded">Next.js</span>
+</div>
+</div>
+</div>
+<!-- Project Card 5 (EasyCSV) -->
+<div class="bg-surface-container-lowest dark:bg-slate-800 border border-outline-variant dark:border-slate-600 rounded-xl overflow-hidden flex flex-col group hover:shadow-ambient transition-all duration-300">
+<a href="Image Folder/easyCSV.png" target="_blank" class="block w-full h-48 overflow-hidden border-b border-outline-variant dark:border-slate-600">
+<img src="Image Folder/easyCSV.png" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="EasyCSV auto Data Extraction" />
+</a>
+<div class="p-lg flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-sm">
+<h3 class="font-h3 text-h3 text-on-surface dark:text-slate-100">EasyCSV auto Data Extraction</h3>
+<span class="bg-surface-container-high dark:bg-slate-700 text-on-surface dark:text-slate-100 font-caption text-caption px-xs py-base rounded">Completed</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-300 mb-md flex-1">Built an NLP-based tool to convert user queries from plain English into SQL for data extraction from CSV and TXT files.</p>
+<div class="flex flex-wrap gap-base mb-md">
+<span class="bg-surface dark:bg-slate-900 text-on-surface-variant dark:text-slate-300 border border-outline-variant dark:border-slate-600 font-caption text-caption px-xs py-base rounded">NLP</span>
+<span class="bg-surface dark:bg-slate-900 text-on-surface-variant dark:text-slate-300 border border-outline-variant dark:border-slate-600 font-caption text-caption px-xs py-base rounded">SQL</span>
+<span class="bg-surface dark:bg-slate-900 text-on-surface-variant dark:text-slate-300 border border-outline-variant dark:border-slate-600 font-caption text-caption px-xs py-base rounded">Python</span>
+</div>
+<div class="flex flex-wrap items-center gap-md mt-auto pt-sm border-t border-outline-variant dark:border-slate-600">
+<a href="https://github.com/khiemhuynh95/easy-csv" target="_blank" class="inline-flex items-center gap-xs text-primary dark:text-blue-300 hover:text-primary dark:hover:text-white transition-colors font-label-md text-label-md">GitHub Repository <span class="material-symbols-outlined text-[16px]">open_in_new</span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Volunteer Section -->
+<section class="max-w-max-width mx-auto px-margin-mobile md:px-lg mt-section" id="volunteer">
+<h2 class="font-h2 text-h2 text-on-surface dark:text-slate-100 mb-lg">Volunteer</h2>
+<div class="flex flex-col gap-lg border-l border-outline-variant dark:border-slate-600 pl-md relative">
+<!-- Volunteer Card 1 -->
+<div class="relative bg-surface-container-lowest dark:bg-slate-800 border border-outline-variant dark:border-slate-600 p-lg rounded-xl shadow-ambient">
+<div class="absolute -left-[1.65rem] top-lg w-3 h-3 bg-surface-variant rounded-full ring-4 ring-background dark:ring-slate-900 border border-outline-variant dark:border-slate-600"></div>
+<div class="flex flex-col md:flex-row md:justify-between md:items-start gap-xs mb-sm">
+<div class="flex items-center gap-sm">
+<a href="Image Folder/VINCEF.png" target="_blank" class="block flex-shrink-0">
+<img src="Image Folder/VINCEF.png" alt="VINCEF" class="w-16 h-16 object-contain rounded bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 hover:scale-105 transition-transform" />
+</a>
+<div>
+<h3 class="font-h3 text-h3 text-on-surface dark:text-slate-100">Secretary</h3>
+<p class="font-body-md text-body-md text-primary dark:text-blue-300 font-medium">VINCEF</p>
+</div>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-300">I volunteer as a Secretary for VINCEF, the Vietnamese International Network of Culture, Education, and Friendship at the University of Texas at Dallas. In this role, I am dedicated to fostering a welcoming and vibrant community for international students. I have provided 80+ international students with multiple opportunities to be familiar with the new lifestyle and join the Viet community in the United States. Through meticulous organization and coordination, I managed the club's operational excellence to ensure all events are on time, on schedule, and on performance, creating meaningful experiences.</p>
+</div>
+<!-- Volunteer Card 2 -->
+<div class="relative bg-surface-container-lowest dark:bg-slate-800 border border-outline-variant dark:border-slate-600 p-lg rounded-xl shadow-ambient">
+<div class="absolute -left-[1.65rem] top-lg w-3 h-3 bg-surface-variant rounded-full ring-4 ring-background dark:ring-slate-900 border border-outline-variant dark:border-slate-600"></div>
+<div class="flex flex-col md:flex-row md:justify-between md:items-start gap-xs mb-sm">
+<div class="flex items-center gap-sm">
+<a href="Image Folder/FMSC.png" target="_blank" class="block flex-shrink-0">
+<img src="Image Folder/FMSC.png" alt="Feed My Starving Children" class="w-16 h-16 object-contain rounded bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 hover:scale-105 transition-transform" />
+</a>
+<div>
+<h3 class="font-h3 text-h3 text-on-surface dark:text-slate-100">Volunteer</h3>
+<p class="font-body-md text-body-md text-primary dark:text-blue-300 font-medium">Feed My Starving Children</p>
+</div>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-300">I volunteer at Feed My Starving Children in Glenville, a nonprofit organization committed to feeding children who are hungry in body and spirit. I contribute regularly to their mission by participating in meal packing events, ensuring packages are properly sealed for distribution, and organizing and managing packaged meals in the warehouse for efficient distribution. Through this meaningful work, I join a community of dedicated volunteers working together to end childhood hunger, one meal at a time.</p>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="max-w-max-width mx-auto px-margin-mobile md:px-lg mt-section" id="skills">
+<h2 class="font-h2 text-h2 text-on-surface dark:text-slate-100 mb-lg">Technical Skills</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="bg-surface-container-lowest dark:bg-slate-800 border border-outline-variant dark:border-slate-600 p-md rounded-xl">
+<h3 class="font-h3 text-h3 text-on-surface dark:text-slate-100 mb-sm">Programming Languages</h3>
+<div class="flex flex-wrap gap-xs">
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">Python</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">R</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">Java</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">JavaScript</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">TypeScript</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">C / C++</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">Kotlin</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">SQL (MySQL)</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">HTML / CSS</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest dark:bg-slate-800 border border-outline-variant dark:border-slate-600 p-md rounded-xl">
+<h3 class="font-h3 text-h3 text-on-surface dark:text-slate-100 mb-sm">Frameworks &amp; Libraries</h3>
+<div class="flex flex-wrap gap-xs">
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">PyTorch</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">TensorFlow</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">Scikit-Learn</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">Pandas</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">NumPy</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">Matplotlib &amp; Seaborn</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">OpenCV</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">React.js &amp; Next.js</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">Node.js</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest dark:bg-slate-800 border border-outline-variant dark:border-slate-600 p-md rounded-xl">
+<h3 class="font-h3 text-h3 text-on-surface dark:text-slate-100 mb-sm">Databases &amp; Big Data Systems</h3>
+<div class="flex flex-wrap gap-xs">
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">MySQL</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">MongoDB</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">Cassandra</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">Neo4j</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">HBase &amp; Hive</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">GraphX</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">ELK Stack</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">Databricks</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">Power BI &amp; Tableau</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest dark:bg-slate-800 border border-outline-variant dark:border-slate-600 p-md rounded-xl">
+<h3 class="font-h3 text-h3 text-on-surface dark:text-slate-100 mb-sm">AI, Data &amp; Software Engineering</h3>
+<div class="flex flex-wrap gap-xs">
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">Machine / Deep Learning</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">Model Deployment</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">RAG Systems</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">Agentic AI &amp; LLMs (Claude, OpenAI)</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">Data Science</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">ETL Pipelines</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">Big Data Analysis</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">Full-Stack Development</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest dark:bg-slate-800 border border-outline-variant dark:border-slate-600 p-md rounded-xl md:col-span-2">
+<h3 class="font-h3 text-h3 text-on-surface dark:text-slate-100 mb-sm">Cloud &amp; Development Tools</h3>
+<div class="flex flex-wrap gap-xs">
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">AWS Cloud</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">Microsoft Azure</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">Git / VS Code</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">Anaconda / Jupyter Notebook / Google Colab</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">Excel / Office 365</span>
+<span class="bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 text-on-surface dark:text-slate-100 font-caption text-caption px-sm py-base rounded">Salesforce</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Education Section -->
+<section class="max-w-max-width mx-auto px-margin-mobile md:px-lg mt-section" id="education">
+<h2 class="font-h2 text-h2 text-on-surface dark:text-slate-100 mb-lg">Education</h2>
+<div class="flex flex-col gap-md">
+<div class="bg-surface-container-lowest dark:bg-slate-800 border border-outline-variant dark:border-slate-600 p-lg rounded-xl shadow-ambient">
+<div class="flex flex-col md:flex-row md:justify-between md:items-start gap-xs mb-sm">
+<div class="flex items-center gap-sm">
+<img src="Image Folder/utd_logo.png" alt="UTD" class="w-12 h-12 object-contain rounded bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800" />
+<div>
+<h3 class="font-h3 text-h3 text-on-surface dark:text-slate-100">Master of Science in Data Science</h3>
+<p class="font-body-md text-body-md text-primary dark:text-blue-300 font-medium">University of Texas at Dallas</p>
+</div>
+</div>
+<span class="font-caption text-caption text-on-surface-variant dark:text-slate-300 bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 px-xs py-base rounded">August 2024 - May 2026</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest dark:bg-slate-800 border border-outline-variant dark:border-slate-600 p-lg rounded-xl shadow-ambient">
+<div class="flex flex-col md:flex-row md:justify-between md:items-start gap-xs mb-sm">
+<div class="flex items-center gap-sm">
+<img src="Image Folder/utd_logo.png" alt="UTD" class="w-12 h-12 object-contain rounded bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800" />
+<div>
+<h3 class="font-h3 text-h3 text-on-surface dark:text-slate-100">Bachelor of Science in Computer Science</h3>
+<p class="font-body-md text-body-md text-primary dark:text-blue-300 font-medium">University of Texas at Dallas</p>
+</div>
+</div>
+<span class="font-caption text-caption text-on-surface-variant dark:text-slate-300 bg-surface-container-low dark:bg-slate-700/50 dark:bg-slate-800 px-xs py-base rounded">Jan 2021 - May 2024</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Certifications Section -->
+<section class="max-w-max-width mx-auto px-margin-mobile md:px-lg mt-section" id="certifications">
+<div class="mb-lg">
+<h2 class="font-h2 text-h2 text-on-surface dark:text-slate-100">Certifications/Licenses</h2>
+<p class="font-body-md text-on-surface-variant dark:text-slate-300">Professional credentials and licenses</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<!-- Certification Card 1 -->
+<div class="flex items-center gap-md p-lg bg-surface-container-lowest dark:bg-slate-800 border border-outline-variant dark:border-slate-600 rounded-xl shadow-ambient">
+<div class="w-20 h-20 flex-shrink-0 flex items-center justify-center bg-surface-container dark:bg-slate-800/80 rounded-lg p-2">
+<img src="Image Folder/AWS_Logo.png" alt="AWS" class="w-full h-full object-contain" />
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-xs">
+<h3 class="font-h3 text-h3 text-on-surface dark:text-slate-100">AWS Certified Cloud Practitioner</h3>
+</div>
+<div class="mt-sm">
+<a href="https://www.credly.com/badges/db182614-024f-4418-aebb-1a8b43a2911f/linked_in_profile" target="_blank" class="inline-flex items-center gap-xs text-primary dark:text-blue-300 hover:text-primary dark:hover:text-white dark:text-blue-300 dark:hover:text-white-container font-label-md text-label-md transition-colors">View Certificate <span class="material-symbols-outlined text-[16px]">open_in_new</span></a>
+</div>
+</div>
+</div>
+<!-- Certification Card 2 -->
+<div class="flex items-center gap-md p-lg bg-surface-container-lowest dark:bg-slate-800 border border-outline-variant dark:border-slate-600 rounded-xl shadow-ambient">
+<div class="w-20 h-20 flex-shrink-0 flex items-center justify-center bg-surface-container dark:bg-slate-800/80 rounded-lg p-2">
+<img src="Image Folder/Insurance_Logo.png" alt="Insurance" class="w-full h-full object-contain" />
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-xs">
+<h3 class="font-h3 text-h3 text-on-surface dark:text-slate-100">General Line insurance Agent</h3>
+</div>
+<div class="mt-sm">
+<a href="https://drive.google.com/file/d/1wkW9pwgBvAwod4twOb9rcBoEc7t3HS-B/view?usp=sharing" target="_blank" class="inline-flex items-center gap-xs text-primary dark:text-blue-300 hover:text-primary dark:hover:text-white dark:text-blue-300 dark:hover:text-white-container font-label-md text-label-md transition-colors">View Certificate <span class="material-symbols-outlined text-[16px]">open_in_new</span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="max-w-max-width mx-auto px-margin-mobile md:px-lg mt-section mb-xl" id="contact">
+<div class="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-6">
+<!-- Left Column: Form -->
+<div class="bg-surface-container-lowest dark:bg-slate-800 border border-outline-variant dark:border-slate-600 p-lg rounded-xl shadow-ambient flex flex-col h-full">
+<h3 class="font-h2 text-h3 text-on-surface dark:text-slate-100 font-bold mb-1">Send a Message</h3>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-300 mb-md">Please fill out the form, I'll reply to you within 1-3 days</p>
+
+<form action="https://formspree.io/f/xkoekpjr" method="POST" class="flex flex-col gap-4 flex-1">
+<input type="text" name="name" required class="w-full bg-surface dark:bg-slate-900/50 border border-outline-variant dark:border-slate-700 rounded-lg px-4 py-3 font-body-md text-on-surface dark:text-slate-100 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none" placeholder="Your Name" />
+<input type="email" name="email" required class="w-full bg-surface dark:bg-slate-900/50 border border-outline-variant dark:border-slate-700 rounded-lg px-4 py-3 font-body-md text-on-surface dark:text-slate-100 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none" placeholder="Your Email" />
+<textarea name="message" rows="5" required class="w-full bg-surface dark:bg-slate-900/50 border border-outline-variant dark:border-slate-700 rounded-lg px-4 py-3 font-body-md text-on-surface dark:text-slate-100 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none flex-1" placeholder="Your Message"></textarea>
+
+<button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-cyan-400 dark:from-blue-600 dark:to-cyan-400 text-white font-label-md text-label-md px-lg py-3 rounded-lg hover:opacity-90 transition-all focus:ring-2 focus:ring-primary focus:ring-offset-2 active:scale-95 shadow-md flex items-center justify-center mt-2">
+Send Message
+</button>
+</form>
+</div>
+
+<!-- Right Column: Links & Focus -->
+<div class="flex flex-col gap-6">
+<!-- Connect With Me -->
+<div class="bg-surface-container-lowest dark:bg-slate-800 border border-outline-variant dark:border-slate-600 p-lg rounded-xl shadow-ambient">
+<h3 class="font-h3 text-h3 text-on-surface dark:text-slate-100 font-bold mb-1">Connect With Me</h3>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-slate-300 mb-md">Find me on these platforms</p>
+
+<div class="flex flex-col gap-3 mb-4">
+<a href="https://github.com/hxt200010" target="_blank" class="flex items-center gap-3 bg-surface dark:bg-slate-900/50 px-4 py-3 rounded-lg border border-transparent hover:border-outline-variant dark:hover:border-slate-600 transition-colors group">
+<img src="Image Folder/github.png" alt="GitHub" class="w-5 h-5 object-contain dark:invert opacity-80 group-hover:opacity-100 transition-opacity" />
+<span class="font-label-md text-on-surface dark:text-slate-100 font-medium">GitHub</span>
+</a>
+<a href="https://www.linkedin.com/in/anthony-tran-194b05277/" target="_blank" class="flex items-center gap-3 bg-surface dark:bg-slate-900/50 px-4 py-3 rounded-lg border border-transparent hover:border-outline-variant dark:hover:border-slate-600 transition-colors group">
+<img src="Image Folder/Linkedin.png" alt="LinkedIn" class="w-5 h-5 object-contain opacity-80 group-hover:opacity-100 transition-opacity" />
+<span class="font-label-md text-on-surface dark:text-slate-100 font-medium">LinkedIn</span>
+</a>
+<a href="#contact" class="flex items-center gap-3 bg-surface dark:bg-slate-900/50 px-4 py-3 rounded-lg border border-transparent hover:border-outline-variant dark:hover:border-slate-600 transition-colors group">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant dark:text-slate-400 group-hover:text-primary transition-colors">mail</span>
+<span class="font-label-md text-on-surface dark:text-slate-100 font-medium">Email</span>
+</a>
+</div>
+
+<a href="resume.pdf" target="_blank" class="flex items-center justify-center gap-2 w-full border border-outline-variant dark:border-slate-600 text-on-surface dark:text-slate-100 px-4 py-3 rounded-lg hover:bg-surface-container dark:hover:bg-slate-700 transition-colors font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px]">download</span> Download Resume (PDF)
+</a>
+</div>
+
+<!-- Current Focus -->
+<div class="bg-surface-container-lowest dark:bg-slate-800 border border-outline-variant dark:border-slate-600 p-lg rounded-xl shadow-ambient flex-1">
+<h3 class="font-h3 text-h3 text-on-surface dark:text-slate-100 font-bold mb-md">Current Focus</h3>
+
+<div class="mb-4">
+<p class="font-caption text-caption text-on-surface-variant dark:text-slate-400 mb-1">Currently learning:</p>
+<p class="font-body-md text-body-md text-on-surface dark:text-slate-100 font-medium leading-relaxed">Generative AI, LangChain, AWS AI Services, AI Automation</p>
+</div>
+
+<div>
+<p class="font-caption text-caption text-on-surface-variant dark:text-slate-400 mb-1">Reading:</p>
+<p class="font-body-md text-body-md text-on-surface dark:text-slate-100 font-medium leading-relaxed">Inside the AI Matrix Vault, Co-Intelligence: Living and Working with AI</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-surface-container-lowest dark:bg-slate-800 border-t border-outline-variant dark:border-slate-600 w-full flat">
+<div class="max-w-max-width mx-auto py-xl px-margin-mobile md:px-lg flex flex-col md:flex-row justify-between items-center gap-base">
+<div class="flex flex-col items-center md:items-start">
+<span class="font-h3 text-h3 text-on-surface dark:text-slate-100 mb-xs">Anthony Tran</span>
+<span class="font-caption text-caption text-secondary dark:text-slate-400">© Copyright reserved</span>
+</div>
+</div>
+</footer>
+<!-- Lightbox Modal -->
+<div id="lightbox" class="hidden fixed inset-0 z-[100] bg-black/80 flex-col justify-center items-center p-4 cursor-zoom-out transition-opacity" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" class="max-w-[90vw] max-h-[90vh] object-contain rounded-lg shadow-2xl cursor-default" onclick="event.stopPropagation()" />
+    <button class="absolute top-4 right-4 text-white hover:text-gray-300 focus:outline-none" onclick="closeLightbox()">
+        <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+</div>
+
+<script>
+    function openLightbox(src) {
+        const lightbox = document.getElementById('lightbox');
+        const img = document.getElementById('lightbox-img');
+        img.src = src;
+        lightbox.classList.remove('hidden');
+        lightbox.classList.add('flex');
+    }
+    function closeLightbox() {
+        const lightbox = document.getElementById('lightbox');
+        lightbox.classList.add('hidden');
+        lightbox.classList.remove('flex');
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+        const links = document.querySelectorAll('a[target="_blank"]');
+        links.forEach(link => {
+            if (link.href.match(/\.(jpeg|jpg|gif|png)$/i)) {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const href = link.getAttribute('href');
+                    openLightbox(href);
+                });
+            }
+        });
+        
+        const toggleBtn = document.getElementById('dark-mode-toggle');
+        const htmlEl = document.documentElement;
+        const iconEl = toggleBtn.querySelector('span');
+
+        toggleBtn.addEventListener('click', () => {
+            if(htmlEl.classList.contains('dark')) {
+                htmlEl.classList.remove('dark');
+                htmlEl.classList.add('light');
+                iconEl.innerText = 'dark_mode';
+            } else {
+                htmlEl.classList.remove('light');
+                htmlEl.classList.add('dark');
+                iconEl.innerText = 'light_mode';
+            }
+        });
+    });
+</script>
+</body></html>

@@ -1,0 +1,109 @@
+Name: Anthony Tran
+Aspiring Data Analyst / Scientist and Software Engineer
+
+
+About me: I’m a Master’s student in Computer Science at University of Texas at Dallas specializing in Data Science field. 
+
+As a future Data Scientist, I'm curious, curious in things that are happening around me, the problem that I'm facing, and what solution I can solve! This is what drive me, inspire me, and push me to become a promising Data Scientist. 
+
+I provide insight and solution to business's problems. I'm proficient at Databrick, Jupyter Notebook, Google Collab, Python, SQL, Excel, Tableau, Power BI, LLM, Generative AI, Machine Learning, Predictive Learning, Claude, Gemini, Stitch, and so on!
+
+Beside my technical background, I'm a communicator, that means excellent in communication and people skill. I'm a team player, I help teammate whenever possible to deliver solution for businesses. 
+
+If you are looking for an aspiring Data Scientist. Please feel free to connect with me!
+
+Github link:
+https://github.com/hxt200010
+
+LinkedIn: 
+https://www.linkedin.com/in/anthony-tran-194b05277/
+
+
+
+Experience: 
+Software Engineer Intern at BAOVIET LLC May 2024 - August 2024
+• Description: Collaborated with Insurance agents to develop a CRM application to securely store and organize 1,000+ client
+records, improving system reliability and optimizing workflows for agents. Gathered all customer data to improve AI training
+while keeping customers sensitive data secured
+• Software Applications: Python, SQLite/PostgreSQL, Github, AWS, Vercel, React, isPDF, Uvicorn, Pydantic, Claude, Agent
+• Soft Skills: Problem-Solving, Attention to Detail, Communication, Collaboration.
+• Achievement: Reduced manual tracking time by 40% through system automation and improved data accessibility
+
+Mark Cuban Foundation AI Bootcamp Mentor September 2022 - October 2022
+• Description: Mentored and instructed 100+ high school students in foundational AI and machine learning concepts through
+a 4-week intensive bootcamp, focusing on practical applications and real-world use cases.
+• Software Applications: Microsoft Azure, Azure Machine Learning Studio, Azure Notebooks, Cognitive Services (Vision,
+Language, Speech APIs).
+• Soft Skills: Problem-solving, Communication, Leadership, Teaching, Mentorship.
+• Achievement: Successfully guided students in understanding core AI/ML concepts, improving engagement and learning
+outcomes with Microsoft Azure.
+
+Project: 
+Python Library Assistant (Tools: FastAPI, LangChain, OpenAI, Python, React, Git) February - May 2025
+• Description: Collaborated with a team of 4 to create an intelligent RAG-based chatbot utilizing Python, LangChain, and
+OpenAI, effectively retrieving unstructured text data from Python documentation to provide conversational coding support
+with 90% accuracy.
+• Software Applications: FastAPI, LangChain, OpenAI, Python, React, Git
+• Soft Skills: Team Collaboration, Problem-Solving, Communication, Technical Support
+• Achievement: Executed document indexing and retrieval strategies using FAISS, integrating a FastAPI backend with a Next.js
+frontend to orchestrate seamless user interactions and enhance data accessibility.
+https://github.com/hxt200010/cs6320_project
+
+
+Recommender System (Tools: Python, SQL, Git) February 2024
+• Description: Teamed up with 4 members in the American Airlines Hackathon to develop a personalized recommendation
+engine to suggest optimal locations to over 10,000 users based on machine learning through 10000+ rows of real data
+• Software Applications: Python, SQL, Git
+• Soft Skills: Collaboration, Data Analysis, Problem-Solving, Machine Learning
+• Achievement: Utilized Ensemble Learning and Gradient Boosting to model complex customer patterns and improve location
+booking likelihood. Predicted 10 recommended locations for AA customers from their past trips.
+image: AA_Hackathon.png 
+
+Discord Bot (Tools: OpenAI, Rest API, Node.js, JavaScript, Github, Render)
+• Created a fully immersive Discord bot with more than 100 slash commands ranging from Game System to Education system to allow 500+ users to enjoy the game while gaining knowledge (from Machine Learning to Data Structure / Algorithm to General Engineer to Coding), resulting in 60% more engaging interaction for learning.
+• Utilized OpenAI API, REST API to ensure maximum quality responses and real-time interaction to ensure user satisfaction.
+• Ensured zero-downtime update by designing and Engineering a scalable cloud deployment using Render and CI/CD through Github.
+• Designed a role-based progression system that rewards users with experience points, currency, and items.
+https://github.com/hxt200010/DiscordBot
+
+
+CapyLearn Learning Platform (Tools: Python, LangChain, OpenAI, FAISS, Next.js, Github)
+• Created a 3-panel resizable workspace (Knowledge Base, Document Viewer, AI Tutor) with drag-to-resize dividers for split-screen studying
+• Developed an agentic AI chat system with autonomous tool-calling loop — the AI can search materials, generate flashcards, save notes, and execute code across multiple reasoning steps
+• Implemented multimodal document analysis — PDFs rendered as images via PyMuPDF and processed through GPT-4o vision API for diagram/chart/handwriting understanding
+
+
+
+VOLUNTEER
+ VINCEF volunteer: I volunteer as a Secretary for VINCEF, the Vietnamese International Network of Culture, Education, and Friendship at the University of Texas at Dallas. In this role, I am dedicated to fostering a welcoming and vibrant community for international students, particularly those from Vietnam. I have provided 80+ international students with multiple opportunities to be familiar with the new lifestyle and join the Viet community in the United States. Through meticulous organization and coordination, I managed the club's operational excellence to ensure all events are on time, on schedule, and on performance, creating meaningful experiences that help students connect with their cultural heritage while building lasting friendships in their new home.
+image: VINCEF.png  
+
+Feed My starving children: I volunteer at Feed My Starving Children in Glenville, a nonprofit organization committed to feeding children who are hungry in body and spirit. I contribute regularly to their mission by participating in meal packing events, ensuring packages are properly sealed for distribution to children in need around the world, and organizing and managing packaged meals in the warehouse for efficient distribution. Through this meaningful work, I join a community of dedicated volunteers working together to end childhood hunger, one meal at a time.
+image: FMSC.png  
+
+Education
+Bachelor of Science in Computer Science: University of Texas at Dallas
+
+Master of Science in Data Science: University of Texas at Dallas
+
+
+TECHNICAL SKILLS
+Programming Language: Python, R, Java, JavaScript, TypeScript, C, C++, Kotlin, SQL (MySQL), HTML, CSS.
+Frameworks & Libraries: PyTorch, TensorFlow, Scikit-Learn, Pandas, NumPy, Matplotlib, Seaborn, OpenCV, React.js, Next.js, Node.js,
+Databases & Big Data Systems: MySQL, MongoDB, Cassandra, Neo4j, HBase, Hive, GraphX, ELK Stack, Databrick, Power BI, Tableau.
+Cloud & Development Tools: AWS Cloud, Microsoft Azure, Git, VS Code, Anaconda, Jupyter Notebook, Google Colab, Excel, Office
+365, SaleForce,
+AI, Data, & Software Engineering Skills: Machine Learning, Deep Learning, Model deployment, Retrieval-Augmented Generation
+(RAG), Agentic AI, Data Science, ETL Pipelines, Big Data Analysis, Big Data Management, Full-Stack Software Development, Data
+Handling, data pipelines, orchestration tools, Claude AI. OpenAI, Google Gemini, Large Language Model (LLM)
+
+
+CERTIFICATION: 
+AWS Certified Cloud Practitioner:
+link: https://www.credly.com/badges/db182614-024f-4418-aebb-1a8b43a2911f/linked_in_profile
+
+General Line insurance Agent
+https://drive.google.com/file/d/1wkW9pwgBvAwod4twOb9rcBoEc7t3HS-B/view?usp=sharing
+
+
+
